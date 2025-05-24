@@ -59,6 +59,12 @@ Button.addEventListener('click', function() {
         return;
     }
 
+    const allowedTypes = ['audio/mp3', 'audio/mpeg', 'video/mp4'];
+    if (!allowedTypes.includes(file.type)) {
+        alert('Invalid file type! Please select an MP3 or MP4 file.');
+        return;
+    }
+
     divToHide.style.display = 'none';
     canvasDiv.style.display = 'flex';
     canvas.width = canvasDiv.clientWidth;
