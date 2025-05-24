@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1 class="header">🎶 Visually-Pretty 🎶</h1>
+    </nav>
+    <div class="container">
+        <div>
+            <label for="audioFile" class="custom-file-label">Choose Audio File</label>
+            <input type="file" id="audioFile" style="display: none;">
+            <p id="fileName" class="file-name-text"></p>
+        </div>
+        <div class="hideDiv">
+            <div class="theme-container">
+                <p>Select Theme: </p>
+                <div class="theme-divs">
+                    <div class="theme-div" id="Particles">
+                        <p>Particles</p>
+                    </div>
+                    <div class="theme-div" id="Waves">
+                        <p>Waves</p>
+                    </div>
+                    <div class="theme-div" id="Bars">
+                        <p>Dancing Bars</p>
+                    </div>
+                    <div class="theme-div" id="Circular">
+                        <p>Circular</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">Enjoy The Vibe!!</button>
+        </div>
+        <div class="canvas-div">
+            <canvas id="visualizer"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
